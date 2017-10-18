@@ -120,6 +120,12 @@ class AuthService {
 	});
 	}
 
+	/**
+	 * SignIn given {email, password}.
+	 *
+	 * @param data {email, password}
+	 * @returns {Promise}
+	 */
 	signIn(data) {
 		return new Promise((resolve, reject) => {
 
