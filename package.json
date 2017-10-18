@@ -1,0 +1,49 @@
+{
+	"name": "cs-cognito-browser-client",
+	"version": "0.0.1",
+	"description": "simple wrapper for the aws cognito api",
+	"private": true,
+	"main": "lib/index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"help": "build-scripts help",
+		"scripts": "build-scripts scripts",
+		"resources": "build-scripts resources",
+		"compile": "build-scripts compile",
+		"test": "build-scripts test",
+		"commit": "build-scripts commit",
+		"patch": "build-scripts patch",
+		"push": "build-scripts push",
+		"patch-push": "build-scripts patch-push",
+		"clean": "build-scripts clean",
+		"zip": "build-scripts zip",
+		"package-lambda": "build-scripts package-lambda",
+		"upload-lambda": "build-scripts upload-lambda"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ControlSpaceSoftware/cs-cognito-browser-client.git"
+	},
+	"author": "javadoug",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ControlSpaceSoftware/cs-cognito-browser-client/issues"
+	},
+	"homepage": "https://github.com/ControlSpaceSoftware/cs-cognito-browser-client#readme",
+	"devDependencies": {
+		"build-scripts": "github:ControlSpaceSoftware/build-scripts"
+	},
+	"dependencies": {
+		"amazon-cognito-identity-js": "^1.21.0",
+		"cs-api-authentication-errors": "github:ControlSpaceSoftware/cs-api-authentication-errors",
+		"lodash.camelcase": "^4.3.0",
+		"ov-object-path": "^1.2.0"
+	},
+	"babel": {
+		"presets": [
+			"env"
+		]
+	}
+}
